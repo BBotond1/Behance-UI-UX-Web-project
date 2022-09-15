@@ -1,14 +1,17 @@
 body {
     margin: 0;
-    background-color: rgb(32, 32, 32);
+    width: 100vh;
+    height: 1000px;
+    /* background-color: rgb(32, 32, 32); */
+    background-image: url("pictures\night-sky-full-of-stars.jpg");
+
 }
 
-#root {
+/* #root {
     display: flex;
     
-    padding: 10%;
     margin: 2px solid rgb(204, 176, 176);
     
     
-}
+} */
 
