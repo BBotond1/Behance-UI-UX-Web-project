@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background-color: rgb(32, 32, 32);
+}
+
+#root {
+    display: flex;
+    
+    padding: 10%;
+    margin: 2px solid rgb(204, 176, 176);
+    
+    
+}
+
