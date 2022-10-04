@@ -124,6 +124,52 @@ header{
 }
 /* First page end */
 
+/* process start*/
+
+#process .pictures {
+  width: 98vw;
+  height: 98vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+#process .pictures .picture_side img {
+  display: flex;
+  width: 230px;
+  height: 200px;
+  opacity: 0.7;
+}
+#process .pictures .picture_middle img {
+  display: flex;
+  width: 430px;
+  height: 520px;
+}
+
+.picture_middle { position: relative;}
+.picture-number-side {position: relative;}
+
+.pictures .picture_side .picture-number-side {
+  font-size: 18px;
+  color: white;
+  position: relative;
+  top: -122px;
+  left: 5%;
+  opacity: 0.7;
+}
+
+.pictures .picture_middle .picture-number-middle {
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  opacity: 0.7;
+  /* z-index: 3; */
+}
+/* process end */
+
 /* Buy ticket start */
 
  .cards {
