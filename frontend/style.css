@@ -2,85 +2,262 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html{
   scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 
 body{
-  font-size: 100%;
   font-family: sans-serif;
 }
 
-/* div, section, span, ul, li, a, header{
-  box-sizing: border-box;
-} */
+section{
+  float: none;
+  position: relative;
+  background-image: url("gray-space2-2.jpg");
 
+}
 
+/* First page start */
+ 
 header{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-  align-items: left;
+  width: 98vw;
+  float: left;
+  padding-top: 20px;
+  align-items: center;
   position: absolute;
   /* z-index: 999; */
 }
 
+#aboutMars .buy-felirat {
+  position: absolute;
+  bottom: 10vh;
+  right: 10vw;
+
+}
+.buy-felirat .buy-szoveg {
+  color: white;
+  font-size: 20px;
+  display: inline;
+  position: relative;
+  bottom: 9px;
+  right: 11px;
+
+}
+.buy-felirat .buy-ikon {
+  display: inline;
+}
+
+#aboutMars .dream-text {
+  position: absolute;
+  bottom: 10vh;
+  left: 10vw;
+}
+.dream-text p {
+  margin-bottom: 5px;
+  display: block;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.821);
+
+}
+
+#aboutMars .mars-picture img{
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: 36vw;
+  top: 30vh;
+
+}
+
+#aboutMars .header-left {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.header-left p {
+  color: brown;
+  text-decoration: none;
+  font-size: 20px;
+  align-items: center;
+}
+
 #menu li{
   list-style: none;
-  display: inline-block;
+  align-items: center;
   margin: 20px;
+  display: inline;
+  float: right;
 }
 
 #menu li a{
-  color: #fff;
+  color: rgba(144, 144, 144, 0.845);
   text-decoration: none;
   font-size: 20px;
+  float: right;
 }
 
-section{
-  width: 100%;
-  float:none;
-  height: 100vh;
-  position: relative;
+.firstPage-title {
+  position: absolute; 
+  top: 30vh;
+  left: 8vw;
+  align-items: center;
 }
+
+.firstPage-title h1 {
+  display: inline;
+  font-weight: normal;
+  font-size: 250px;
+  color:brown;
+  letter-spacing: 40px;
+}
+
+.firstPage-title .jobb {
+  margin-right: 60px;
+}
+
+.firstPage-title .bal {
+  margin-left: 238px;
+}
+/* First page end */
+
+/* Buy ticket start */
+
+ .cards {
+  position: relative;
+  top: 17vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards .ticket-card {
+    font-family: 'Anonymous Pro', monospace;
+    display: flex;
+    border: 1px solid orange;
+    margin:20px;
+    width: 310px;
+    height: 480px;
+    border-radius: 5%;
+    display: block;
+    position: relative;
+    
+}
+
+.ticket-card h3 {
+    font-size: 20px;
+    color: rgb(161, 160, 160);
+    position: absolute;
+    display: block;
+    top: 8%;
+    left: 16%;
+}
+
+.ticket-card .standard-price {
+  font-family: 'Anonymous Pro', monospace;
+  color:rgb(246, 188, 14);
+  font-size: 27px;
+  position: absolute;
+  font-weight: bold;
+  top: 20%;
+  left: 16%;
+}
+
+.ticket-card .vip-price {
+  color:rgb(232, 138, 23);
+  font-size: 27px;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  left: 16%;
+}
+
+.ticket-card .exclusive-price {
+  color:rgb(255, 81, 18);
+  font-size: 27px;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  left: 16%;
+}
+
+.ticket-card ul {
+
+  list-style: none;
+  position: absolute;
+  bottom: 30%;
+  left: 8%;
+}
+.ticket-card ul li {
+  font-size: 13px;
+  color: rgba(214, 213, 213, 0.742);
+  margin-top: 15px;
+}
+
+.ticket-card ul li .standard-checkmark {
+  display: inline;
+  font-size: 13px;
+  color:rgb(246, 188, 14);
+}
+.ticket-card ul li .vip-checkmark {
+  display: inline;
+  font-size: 13px;
+  color:rgb(232, 138, 23);
+}
+.ticket-card ul li .exclusive-checkmark {
+  display: inline;
+  font-size: 13px;
+  color: red;
+}
+
+.ticket-card .footer-text {
+  display: block;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.ticket-card .footer-icon {
+  position: absolute;
+  bottom: 8%;
+  right: 22%;
+  z-index: 5;
+}
+
+.ticket-card img {
+  width: 200px;
+  height: 370px;
+  opacity: 0.2;
+  position: absolute;
+  right: 1px;
+  bottom: 20px;
+}
+
+/* Buy ticket end */
+
+/* sections start */
 
 #aboutMars{
- background-image: url("frontend/pictures/gray-sky.jpg");
- width: 100vw;
- height: 100vh;
+  width: 100%;
+  height: 100vh;
+  position: static;
 }
 
-#process{
-  background-image: url("frontend\pictures\night-sky-full-of-stars.jpg");
+#process{ 
   width: 100%;
+  height: 100vh;
+  position: static;
 }
 
 #buyTickets{
-  background-image: url("frontend/pictures/gray-sky.jpg");
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
-#Blog{
-  background-image: url("frontend/pictures/gray-sky.jpg");
-  width: 100vw;
-  height: 100vh;
-}
 
-#contact{
-  background-image: url("frontend/pictures/gray-sky.jpg");
-  width: 100vw;
-  height: 100vh;
-}
-
-/* h1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-} */
+/* sections end */
