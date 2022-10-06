@@ -109,7 +109,7 @@ header{
 
 .firstPage-title h1 {
   display: inline;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 250px;
   color:brown;
   letter-spacing: 40px;
@@ -134,6 +134,18 @@ header{
   justify-content: space-evenly;
   align-items: center;
   position: relative;
+}
+
+#process .gallery-title {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  width: 273px;
+  height: 32px;
+  top: 31px;
+  left: 112px;
+  opacity: 0.9;
 }
 
 #process .pictures .picture_side img {
@@ -175,10 +187,22 @@ header{
 
  .cards {
   position: relative;
-  top: 17vh;
+  top: 13vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#buyTickets .available-tickets {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  width: 273px;
+  height: 32px;
+  top: 34px;
+  left: 167px;
+  opacity: 0.9;
 }
 
 .cards .ticket-card {
